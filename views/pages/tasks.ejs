@@ -1,0 +1,17 @@
+<%- include('../template/head') -%>
+<%- include('../template/navbar') -%>
+<div class="d-flex justify-content-center flex-column align-center card mt-4 m-2 justify-content-center align-items-center">
+    <div><%= message %></div>
+    <div>
+        <ul>
+            <% items.forEach( task => { %>
+                <% if(task.title === 'Rattlesnake, horned') { %>
+                    <li>Hola mundo!</li>
+                <% }else{ %>
+                    <li><%= task.title %></li>
+                <% } %>
+            <% }); %>
+        </ul>
+    </div>
+</div>
+<%- include('../template/footer') -%>

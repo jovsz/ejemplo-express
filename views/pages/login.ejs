@@ -1,0 +1,18 @@
+<%- include('../template/head') -%>
+<%-include('../template/navbar') -%>
+<div class="card p-5 m-5">
+    <form action='/login' method='POST'>
+        <div class="mb-3">
+            <label for="email" class="form-label">Correo Electronico:</label>
+            <input type="email" class="form-control" name="email" id="email" placeholder="Correo Electronico">
+        </div>
+        <div class="mb-3">
+            <label for="password" class="form-label">Contraseña</label>
+            <input type="password" class="form-control" id="password" name="password" placeholder="Contraseña">
+        </div>
+        <div class="mb-3">
+            <button type="submit" class="btn btn-primary">Iniciar sesion</button>
+        </div>
+    </form>
+</div>
+<%- include('../template/footer') -%>
